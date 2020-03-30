@@ -8,7 +8,6 @@
 #' @export
 Pmat_product <- function(x, P, type = NULL){UseMethod("Pmat_product")}
 
-#' @export
 Pmat_product.numeric <- function(x, P, type = NULL){
   if(is.null(type)){type = attr(P,"type")}
   ### check length
